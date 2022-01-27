@@ -2,18 +2,24 @@
   <div id="app">
     <header-box />
     <jumbotron-box />
+    <main-container />
+    <footer-merch />
   </div>
 </template>
 
 <script>
+import FooterMerch from "./components/FooterMerch.vue";
 import HeaderBox from "./components/HeaderBox.vue";
 import JumbotronBox from "./components/JumbotronBox.vue";
+import MainContainer from "./components/MainContainer.vue";
 
 export default {
   name: "App",
   components: {
     HeaderBox,
     JumbotronBox,
+    MainContainer,
+    FooterMerch,
   },
 };
 </script>
