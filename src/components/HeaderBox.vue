@@ -46,11 +46,13 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+
 header {
   width: 1200px;
   display: flex;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
 
   .logo {
     width: 30%;
@@ -73,7 +75,7 @@ header {
 
       li {
         list-style: none;
-        padding: 5px;
+        padding: 0 5px;
         cursor: pointer;
 
         a {
