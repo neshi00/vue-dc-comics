@@ -4,10 +4,12 @@
     <jumbotron-box />
     <main-container />
     <footer-merch />
+    <footer-contacts />
   </div>
 </template>
 
 <script>
+import FooterContacts from "./components/FooterContacts.vue";
 import FooterMerch from "./components/FooterMerch.vue";
 import HeaderBox from "./components/HeaderBox.vue";
 import JumbotronBox from "./components/JumbotronBox.vue";
@@ -20,6 +22,7 @@ export default {
     JumbotronBox,
     MainContainer,
     FooterMerch,
+    FooterContacts,
   },
 };
 </script>

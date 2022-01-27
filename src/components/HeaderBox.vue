@@ -63,6 +63,7 @@ header {
 
   nav {
     width: 70%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
     ul {
       font-size: 20px;
