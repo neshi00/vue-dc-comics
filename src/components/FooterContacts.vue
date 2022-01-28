@@ -80,6 +80,10 @@ export default {};
           a {
             color: gray;
             text-decoration: none;
+
+            &:hover {
+              color: #fff;
+            }
           }
         }
       }

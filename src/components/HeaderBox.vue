@@ -75,13 +75,19 @@ header {
 
       li {
         list-style: none;
-        padding: 0 5px;
+        padding: 0 10px;
         cursor: pointer;
 
         a {
           text-decoration: none;
           color: #000;
           font-weight: bold;
+
+          &:hover {
+            color: $dc-blue;
+            padding-bottom: 35px;
+            border-bottom: 5px solid $dc-blue;
+          }
         }
       }
     }
