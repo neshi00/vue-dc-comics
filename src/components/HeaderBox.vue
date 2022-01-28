@@ -6,35 +6,10 @@
 
     <nav>
       <ul>
-        <li>
-          <a href="#">CHARACTERS</a>
-        </li>
-        <li>
-          <a href="#">COMICS</a>
-        </li>
-        <li>
-          <a href="#">MOVIE</a>
-        </li>
-        <li>
-          <a href="#">TV</a>
-        </li>
-        <li>
-          <a href="#">GAMES</a>
-        </li>
-        <li>
-          <a href="#">COLLECTIBLES</a>
-        </li>
-        <li>
-          <a href="#">VIDEOS</a>
-        </li>
-        <li>
-          <a href="#">FANS</a>
-        </li>
-        <li>
-          <a href="#">NEWS</a>
-        </li>
-        <li>
-          <a href="#">SHOP</a>
+        <li v-for="link in navLinks" :key="link.id">
+          <a :href="link.url">
+            {{ link.label }}
+          </a>
         </li>
       </ul>
     </nav>
@@ -42,7 +17,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    navLinks: Array,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -65,7 +44,6 @@ header {
 
   nav {
     width: 70%;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
     ul {
       font-size: 20px;
@@ -74,12 +52,10 @@ header {
       justify-content: center;
 
       li {
-        list-style: none;
         padding: 0 10px;
         cursor: pointer;
 
         a {
-          text-decoration: none;
           color: #000;
           font-weight: bold;
 

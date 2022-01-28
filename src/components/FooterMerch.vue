@@ -57,9 +57,7 @@ export default {};
       justify-content: space-between;
 
       li {
-        list-style: none;
         a {
-          text-decoration: none;
           color: #fff;
           font-weight: bold;
 

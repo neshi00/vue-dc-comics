@@ -75,11 +75,8 @@ export default {};
           font-size: 25px;
         }
         li {
-          list-style: none;
-
           a {
             color: gray;
-            text-decoration: none;
 
             &:hover {
               color: #fff;

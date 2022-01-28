@@ -22,7 +22,6 @@ export default {};
 @import "../style/variables.scss";
 
 .macro-container {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #303030;
 
   .container {
