@@ -173,5 +173,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./style/main.scss";
+@import "./style/ClassUtility.scss";
+@import "./style/variables.scss";
 </style>

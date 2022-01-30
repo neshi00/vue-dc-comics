@@ -61,12 +61,11 @@ export default {};
     width: 1200px;
     margin: 0 auto;
     display: flex;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
 
     .links {
       display: flex;
-      width: 70%;
+      width: 60%;
       ul {
         padding: 20px;
 
@@ -86,10 +85,12 @@ export default {};
       }
     }
     .logo-bg {
-      width: 30%;
+      width: 40%;
 
       img {
-        height: 300px;
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
       }
     }
   }

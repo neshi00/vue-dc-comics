@@ -1,18 +1,18 @@
 <template>
-  <div class="container">
-    <div class="box-button">
-      <button>test</button>
-    </div>
+  <div class="macro-container">
+    <div class="container">
+      <button class="current-series">CURRENT SERIES</button>
 
-    <main>
-      <div class="card" v-for="(comic, index) in comicsList" :key="index">
-        <img :src="comic.thumb" />
-        <p>{{ comic.series }}</p>
+      <main>
+        <div class="card" v-for="(comic, index) in comicsList" :key="index">
+          <img :src="comic.thumb" />
+          <p>{{ comic.series }}</p>
+        </div>
+      </main>
+
+      <div class="box-load">
+        <button class="load-more">LOAD MORE</button>
       </div>
-    </main>
-
-    <div class="box-button">
-      <button>test</button>
     </div>
   </div>
 </template>
@@ -26,22 +26,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
+@import "../style/variables.scss";
+
+.macro-container {
   background-color: #1c1c1c;
 
-  .box-button {
+  .container {
     width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+  }
 
-    button {
-    }
+  .current-series {
+    background-color: $dc-blue;
+    padding: 5px 20px;
+    font-size: 30px;
+    margin: -20px 0;
   }
 
   main {
-    width: 1200px;
-    margin: 0 auto;
     padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
@@ -54,6 +56,18 @@ export default {
         color: #fff;
         padding: 20px 0;
       }
+    }
+  }
+
+  .box-load {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+
+    .load-more {
+      background-color: $dc-blue;
+      padding: 7px 21px;
+      font-size: 7px;
     }
   }
 }
